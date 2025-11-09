@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">🌎 Advanced Weather App</h1>
+
+        <div class="controls">
+            <input type="text" id="city" placeholder="Enter city name..." />
+            <button id="searchBtn">Search</button>
+
+            <select id="cityDropdown">
+                <option value="">🌆 Choose a random city</option>
+                <option value="New York">New York</option>
+                <option value="London">London</option>
+                <option value="Tokyo">Tokyo</option>
+                <option value="Paris">Paris</option>
+                <option value="Dubai">Dubai</option>
+                <option value="Sydney">Sydney</option>
+                <option value="Berlin">Berlin</option>
+                <option value="Los Angeles">Los Angeles</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Singapore">Singapore</option>
+            </select>
+        </div>
+
+        <div class="weather-card hidden" id="weatherCard">
+            <h2 id="cityName"></h2>
+            <div class="weather-icon" id="weatherIcon">☀️</div>
+            <div class="temp" id="temp"></div>
+            <div class="details">
+                <p><strong>Feels Like:</strong> <span id="feels_like"></span></p>
+                <p><strong>Humidity:</strong> <span id="humidity"></span></p>
+                <p><strong>Wind Speed:</strong> <span id="wind_speed"></span></p>
+            </div>
+            <p class="condition" id="condition"></p>
+        </div>
+
+        <p class="error hidden" id="error">❌ City not found. Please try again.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
