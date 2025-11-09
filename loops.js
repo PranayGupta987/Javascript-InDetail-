@@ -1,11 +1,11 @@
 //for of loop
 
 
-// in the below example s is the index of the string
+// in the below example s is the element of the string
 
 // let str = "Hello Pranay";
 
-// for (s in str) {
+// for (s of str) {
 //     console.log(str[s]);
 // }
 
